@@ -1,0 +1,38 @@
+//color
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark:#28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-third-light: #2998ff;
+$color-third-dark: #5643fa;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$white: #fff;
+$black: #000;
+
+$color-grey-light-1:#f7f7f7;
+
+// length grid
+$grid-width:114rem;
+$grid-width-small:50rem;
+
+$gutter-vertical:8rem;
+$gutter-vertical-medium:5.8rem;
+$gutter-vertical-small:5.8rem;
+$gutter-horizontal: 6rem;
+$gutter-horizontal-medium: 4.5rem;
+$gutter-horizontal-small: 1.5rem;
+
+//font size
+$default-font-size:1.6rem;
+
+//bacground-gradient
+$primary-gradient:linear-gradient(to right bottom, $color-primary-light,$color-primary-dark);
+$secondary-gradient: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark);
+$third-gradient:linear-gradient(to right bottom, $color-third-light,$color-third-dark);

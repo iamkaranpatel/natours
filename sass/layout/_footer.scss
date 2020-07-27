@@ -1,0 +1,115 @@
+.footer{
+
+    background-color: $color-grey-dark-3;
+    padding: 10rem 0;
+    font-size: 1.5rem;
+    color: $color-grey-light-1;
+
+    @include respond(tab-port){
+        padding: 7rem 2rem;
+    }
+
+    @include respond(phone){
+        padding: 4rem 0.5rem;
+    }
+
+
+    &__box{
+        text-align: center;
+        margin-bottom: 5rem;
+
+        @include respond(tab-port){
+            margin-bottom: 4rem;
+        }
+
+        @include respond(phone){
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__logo{
+        height: auto;
+        width: 15rem;
+
+        @include respond(tab-port){
+            width: 13rem;
+        }
+
+        @include respond(phone){
+            width: 10rem;
+        }
+        
+    }
+
+    &__navigation{
+        
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem ;
+        display: inline-block;
+
+        @include respond(tab-port){
+           width: 100%;
+           text-align: center;
+        }
+    }
+
+    &__list{
+        list-style: none;
+
+    }
+
+    &__item{
+        display: inline-block;
+
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link{
+        &:visited,
+        &:link{
+
+            text-decoration: none;
+            color: $color-grey-light-1;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .3s ease-in-out;
+
+        }
+
+        &:hover{
+            color: $color-primary;
+            transform: rotate(360deg) scale(1.6);
+            border-radius: 2px;
+            box-shadow: 0 1rem 2rem rgba($black,.5);
+
+            @include respond(tab-port){
+                transform: rotate(0) scale(1);
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+        }
+
+        &:active{
+
+            transform: rotate(0) scale(1);
+            box-shadow: 0 .5rem 2rem rgba($black,.8);
+        }
+
+    }
+
+    &__copyright{
+        width: 80%;
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem ;
+        display: inline-block;
+        margin-left: 10rem;;
+
+        @include respond(tab-port){
+           margin-left: 0;
+           text-align: center;
+        }
+    }
+}
